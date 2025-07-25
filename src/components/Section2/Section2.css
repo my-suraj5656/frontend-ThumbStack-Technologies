@@ -1,0 +1,186 @@
+.section2-container {
+  /* background: orange; */
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.upper-heading h1 {
+  font-family: "Radio Canada Big", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 160%;
+  letter-spacing: 0%;
+  /* background: red; */
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  /* background: rgb(250, 201, 201); */
+}
+
+.card {
+  background: yellow;
+  width: 100%;
+  max-width: 460px;
+  height: 672px;
+  border-radius: 40px;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 4rem 2rem 3rem 2rem;
+  box-sizing: border-box;
+}
+
+.card2 {
+  background: #cccbc066;
+}
+.upper-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.upper-card :first-child {
+  /* background: red; */
+  font-family: "Radio Canada Big", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 100%;
+  color: #406354;
+}
+.upper-card h1:nth-child(2) {
+  /* background: red; */
+  font-family: "Radio Canada Big", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 100%;
+  color: #242424;
+}
+.upper-card p {
+  font-family: "Radio Canada Big", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: #242424;
+}
+
+.btn {
+  width: 100%;
+  max-width: 380px;
+  height: 53px;
+  border-radius: 6px;
+  opacity: 1;
+  padding-top: 12px;
+  padding-right: 22px;
+  padding-bottom: 12px;
+  padding-left: 22px;
+  gap: 10px;
+  background: #ffffff;
+  font-family: "inter";
+  font-weight: 600;
+  font-size: 18px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.btn2 {
+  background: #2424241a;
+}
+
+.lower-first-card button:nth-child(2) {
+  width: 100%;
+  max-width: 380px;
+  height: 53px;
+  border-radius: 6px;
+  opacity: 1;
+  padding-top: 12px;
+  padding-right: 22px;
+  padding-bottom: 12px;
+  padding-left: 22px;
+  gap: 10px;
+  font-family: "inter";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 160%;
+  letter-spacing: 0%;
+  color: #ffffff;
+  background: #242424;
+}
+
+@media (max-width: 1024px) {
+  .card {
+    max-width: 400px;
+    min-width: 200px;
+    height: 600px;
+  }
+  .upper-card :first-child {
+    font-size: 35px;
+  }
+  .upper-card h1:nth-child(2) {
+    font-size: 35px;
+  }
+  .upper-card p {
+    font-size: 14px;
+  }
+  .btn {
+    font-size: 14px;
+  }
+
+  .lower-first-card button:nth-child(2) {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 850px) {
+  .card {
+    padding: 3rem 1.5rem 2rem 1.5rem;
+  }
+  .upper-card :first-child {
+    font-size: 28px;
+  }
+  .upper-card h1:nth-child(2) {
+    font-size: 28px;
+  }
+  .upper-card p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  .card {
+    padding: 4rem 2rem 3rem 2rem;
+  }
+  .section2-container {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .upper-card :first-child {
+    font-size: 28px;
+  }
+  .upper-card h1:nth-child(2) {
+    font-size: 28px;
+  }
+  .upper-card p {
+    font-size: 16px;
+  }
+  .upper-heading h1 {
+  font-size: 28px;
+  
+}
+}

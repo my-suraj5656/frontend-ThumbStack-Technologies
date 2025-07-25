@@ -1,0 +1,182 @@
+.section5-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Upper section */
+.upper-section {
+  background: #ebeae6;
+  text-align: center;
+  padding: 5rem 1rem;
+}
+
+.upper-section h2 {
+  font-family: "Radio Canada Big", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 160%;
+  color: #242424;
+  margin-bottom: 2rem;
+}
+
+.support-button {
+  border: 1px solid #000;
+  width: 288px;
+  height: 53px;
+  border-radius: 6px;
+  padding: 12px 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.arrow {
+  font-size: 20px;
+}
+
+/* Lower section */
+.lower-section {
+  background-color: #f1ff66;
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.newsletter-text {
+  flex: 1;
+  min-width: 280px;
+  max-width: 500px;
+}
+
+.newsletter-text h2 {
+  font-family: "Radio Canada Big", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 160%;
+  color: #242424;
+}
+
+.newsletter-text p {
+  font-family: "Radio Canada Big", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  margin-top: 1rem;
+}
+
+/* Input and button */
+.newsletter-form {
+  flex: 1;
+  display: flex;
+  flex-wrap: nowrap;
+  max-width: 700px;
+  height: 65px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 1rem;
+  font-size: 16px;
+  background: #f1ff66;
+  border: none;
+  outline: none;
+  font-family: "inter", sans-serif;
+}
+
+.newsletter-form input::placeholder {
+  font-weight: 600;
+  font-size: 13px;
+  color: #242424;
+}
+
+.newsletter-form button {
+  width: 250px;
+  background: #ffffff;
+  font-family: "inter", sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+  border: 1px solid #000000;
+  outline: none;
+  transition: 0.3s ease;
+}
+.newsletter-arrow {
+  width: 55px;
+  height: auto;
+  opacity: 1;
+  border-radius: 10px;
+  border-width: 1px;
+  border: 1px solid #000000;
+  background: #ffffff;
+  display: none;
+}
+.newsletter-form button:hover {
+  background-color: #e4e4e4;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .newsletter-form {
+    max-width: 100%;
+  }
+
+  .newsletter-text {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .lower-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .newsletter-form button {
+    display: none;
+  }
+  .newsletter-arrow {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 21px;
+  }
+  .upper-section h2,
+  .newsletter-text h2 {
+    font-size: 22px;
+  }
+
+  .newsletter-text p {
+    font-size: 16px;
+  }
+
+  .support-button {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .upper-section h2,
+  .newsletter-text h2 {
+    font-size: 16px;
+  }
+
+  .newsletter-text p {
+    font-size: 15px;
+  }
+
+  .newsletter-form button {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap");
+
+.main-section-container {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  margin-top: 5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.section-upper {
+  max-width: 64.875rem;
+  width: 100%;
+  height: 3.625rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-upper h1 {
+  font-family: "Radio Canada Big", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 160%;
+}
+
+.upper-input-container {
+  width: 399px;
+  height: 57px;
+  border-radius: 10px;
+  opacity: 1;
+  position: relative;
+}
+
+.upper-input-container input {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background: #ebeae6;
+  padding: 25px;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.section-upper button {
+  position: absolute;
+  right: 0;
+  background: #ffffff4d;
+  height: 100%;
+  padding: 18px;
+  font-family: "inter";
+  font-weight: 600;
+  font-size: 13px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.section-line {
+  width: 100%;
+  background-color: #242424;
+  height: 1px;
+  position: relative;
+}
+
+.section-line p {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  font-family: "inter";
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 100%;
+  text-align: right;
+}
+
+.section-bottom {
+  max-width: 1263px;
+  width: 100%;
+  height: 380px;
+  /* background: red; */
+}
+
+.section-bottom h1 {
+  font-family: "Radio Canada Big", sans-serif;
+  font-weight: 400;
+  font-size: 86px;
+  line-height: 110%;
+  vertical-align: middle;
+}
+
+/* media queries */
+@media (max-width: 1024px) {
+  .section-bottom{
+    height: auto;
+  }
+
+  .section-upper h1 {
+    font-size: 33px;
+  }
+
+  .section-bottom h1 {
+    font-size: 55px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-section-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .upper-input-container {
+    max-width: 343px;
+    width: 100%;
+  }
+
+  .section-upper {
+    flex-direction: column;
+    gap: 1.5rem;
+    height: fit-content;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-upper h1 {
+    font-size: 28px;
+  }
+  .section-bottom h1 {
+    font-size: 43px;
+  }
+}

@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap");
+
+.hero-container {
+  height: 56.1875rem;
+  background-color: #f1ff66;
+  position: relative;
+  width: 100%;
+  overflow-y: hidden;
+}
+
+.logo {
+  position: absolute;
+  width: 3.375rem;
+  height: 1.3125rem;
+  top: 3.25rem;
+  left: 5.625rem;
+  opacity: 1;
+}
+
+.hamberger {
+  position: absolute;
+  top: 2.6rem;
+  right: 5.625rem;
+  display: none;
+}
+
+.logo span {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 1rem;
+  color: #242424;
+  font-family: "Radio Canada Big", sans-serif;
+}
+
+.hero {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 2.7125rem 0rem 2.7125rem 0rem;
+}
+/* desktop nav */
+.hero-nav-container {
+  max-width: 27.9375rem;
+  width: 100%;
+  height: 2.25rem;
+  padding: 0.825rem;
+  display: block;
+}
+
+.hero-nav-container ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-nav-container ul li span {
+  font-family: "Radio Canada Big", sans-serif;
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-align: center;
+  color: #242424;
+}
+
+.nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.0625rem;
+}
+
+.arrow {
+  width: 0.625rem;
+  height: 0.625rem;
+}
+
+/* mobile nav */
+.mobile-nav {
+  position: absolute;
+  top: 5.25rem;
+  right: 0;
+  max-width: 18.75rem;
+  width: 100%;
+  background-color: #f1ff66;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out, visibility 0s linear 0.3s;
+  z-index: 1000;
+  height: 100%;
+  display: none;
+}
+.mobile-nav ul {
+  list-style: none;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem; /* spacing between items */
+}
+
+.mobile-nav li {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.75rem;
+}
+
+.nav-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.nav-item:hover {
+  color: #007bff; /* hover effect */
+}
+
+.nav-item .arrow {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.2s ease;
+}
+
+.nav-item:hover .arrow {
+  transform: rotate(90deg);
+}
+.mobile-nav.open {
+  display: block;
+  transform: translateX(0);
+}
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 900;
+}
+
+/* content */
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-family: "Radio Canada Big", sans-serif;
+  font-weight: 500;
+  font-size: 92px;
+  text-align: center;
+  max-width: 1446px;
+}
+
+.hero-content p {
+  font-family: "Radio Canada Big", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+/* footer */
+
+.hero-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 84.375rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+}
+
+.footer-nest-container {
+  flex: 1 1 220px;
+  max-width: 300px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.footer-nest-container h3 {
+  font-family: "Radio Canada Big", sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 0.8125rem;
+}
+
+.footer-nest-container p {
+  font-family: "Radio Canada Big", sans-serif;
+  font-weight: 500;
+  font-size: 0.8125rem;
+}
+
+.line {
+  height: 1px;
+  background: #242424;
+  margin-bottom: 1rem;
+}
+
+/* media queries */
+@media (max-width: 1024px) {
+  .hero-content h1 {
+    font-size: clamp(1.75rem, 8vw, 4.5rem);
+  }
+
+  .hero-footer {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobile-nav {
+    display: none;
+  }
+  .backdrop {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .hamberger {
+    position: absolute;
+    top: 2.6rem;
+    right: 5.625rem;
+    display: block;
+  }
+  .hero-nav-container ul {
+    display: none;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(1.75rem, 8vw, 4.5rem);
+  }
+}
+@media (max-width: 576px) {
+  .logo {
+    left: 1.425rem;
+  }
+
+  .hamberger {
+    right: 1.425rem;
+  }
+  .hero-nav-container {
+    width: none;
+  }
+
+  .hero-content {
+    padding: 1.375rem;
+  }
+
+  .hero-content h1 {
+    text-align: start;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+    text-align: start;
+    line-break: auto;
+  }
+
+  .hero-footer {
+    justify-content: center;
+    padding: 0;
+  }
+}
