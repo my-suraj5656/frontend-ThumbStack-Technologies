@@ -54,7 +54,7 @@ const Footer = () => {
 
         {/* Right Side */}
         <div className="starcircle-container">
-          <StarCircle count={12} radius={100} textsize={3} />
+          <StarCircle count={12} radius={100} textsize={2} />
         </div>
       </div>
     </footer>

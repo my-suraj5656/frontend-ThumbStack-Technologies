@@ -15,13 +15,12 @@ const StarCircle = ({ count = 12, radius = 200, textsize }) => {
         return (
           <div
             key={i}
-            className={`absolute text-white text-[${
-              textsize ? textsize : 5
-            }rem] transition-transform duration-500`}
+            className={`absolute text-white transition-transform duration-500`}
             style={{
               left: `calc(50% + ${x}px)`,
               top: `calc(50% + ${y}px)`,
               transform: `translate(-50%, -50%) rotate(${angle}deg)`,
+              fontSize: `${textsize ? textsize : 5}rem`,
             }}
           >
             ★
